@@ -1,4 +1,10 @@
 #include "monty.h"
+
+/**
+ * swap - Swaps the top two elements of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The current line number in the Monty bytecode file.
+ */
 void swap(stack_t **stack, unsigned int line_number)
 {
 	int temp;
@@ -14,6 +20,11 @@ void swap(stack_t **stack, unsigned int line_number)
 	(*stack)->next->n = temp;
 }
 
+/**
+ * nop - Does nothing.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The current line number in the Monty bytecode file.
+ */
 void nop(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;

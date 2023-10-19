@@ -1,5 +1,10 @@
 #include "monty.h"
 
+/**
+ * sub - Subtracts the top two elements of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The current line number in the Monty bytecode file.
+ */
 void sub(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL || (*stack)->next == NULL)
@@ -12,6 +17,11 @@ void sub(stack_t **stack, unsigned int line_number)
 	pop(stack, line_number);
 }
 
+/**
+ * div_stack - Divides the second element by the top element of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The current line number in the Monty bytecode file.
+ */
 void div_stack(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL || (*stack)->next == NULL)
@@ -30,6 +40,11 @@ void div_stack(stack_t **stack, unsigned int line_number)
 	pop(stack, line_number);
 }
 
+/**
+ * mul - Multiplies the top two elements of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The current line number in the Monty bytecode file.
+ */
 void mul(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL || (*stack)->next == NULL)
