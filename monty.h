@@ -1,5 +1,3 @@
-#ifndef B122ED2D_B644_4E3B_B977_367CA8763105
-#define B122ED2D_B644_4E3B_B977_367CA8763105
 #ifndef MONTY_H
 #define MONTY_H
 
@@ -58,6 +56,3 @@ void free_stack(stack_t **stack);
 void op_sub(stack_t **stack, unsigned int line_number);
 
 #endif
-
-
-#endif /* B122ED2D_B644_4E3B_B977_367CA8763105 */

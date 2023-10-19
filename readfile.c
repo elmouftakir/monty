@@ -4,7 +4,7 @@ char *number;
 /**
  * readfile - This function validate the status of the file
  * @myfile: file to open
- *
+ * 
  * Return: Function Void
  */
 
@@ -16,6 +16,7 @@ void readfile(char *myfile)
 	ssize_t ret;
 	int pointer, line = 0, i = 0;
 	stack_t *list = NULL;
+	int getline(char **lineptr, size_t *n, FILE *stream);
 
 	montyFile = fopen(myfile, "r");
 	if (montyFile == NULL)
